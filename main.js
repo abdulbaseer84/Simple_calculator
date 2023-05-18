@@ -5,4 +5,8 @@ const operationB1=document.querySelector('.operation');
 const equalE1=document.querySelector('.equal');
 const clearE1=document.querySelector('allclear');
 const clearlastE1=document.querySelector('lastentity_clear');
-
+let displaynum1 ='';
+let displaynum2 ='';
+let result=null;
+let lsatoperator='';
+let haveDot=false;

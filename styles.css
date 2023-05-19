@@ -55,6 +55,6 @@ section{
 .button:hover{
     background-color: rgb(30, 43, 46);
 }
-.number_zero{
+.btn-0{
     grid-column: 1/3;
 }

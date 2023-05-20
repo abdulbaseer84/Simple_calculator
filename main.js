@@ -103,6 +103,10 @@ window.addEventListener('keydown',(e)=>{
         clickOperation('x');
     }else if(e.key=='Enter'||e.key==="x"){
         clickEqual();
+    }else if(e.key=='Backspace'){
+        clickBackspace();
+    }else if(e.key=='Delete'){
+        clickDelete();
     }
 });
 function clickbuttonE1(key){
@@ -121,4 +125,10 @@ function clickOperation(key){
 }
 function clickEqual(){
     equalE1.click();
+}
+function clickBackspace(key){
+    clearLastE1.click();
+}
+function clickDelete(key){
+    clearE1.click();
 }

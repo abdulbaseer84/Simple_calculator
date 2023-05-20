@@ -57,3 +57,23 @@ function mathOperation(){
         result=parseFloat(result)%parseFloat(dis2Num);
     }
 }
+equalE1.addEventListener('click',(e)=>{
+    if(!dis1Num||!dis2Num)return;
+    haveDot=false;
+    mathOperation();
+    clearVar();
+    display2E1.innerText=result;
+    dis2Num=result;
+    dis1Num='';
+});
+clearE1.addEventListener('click',(e)=>{
+    display1E1.innerText='0';
+    display2E1.innerText='0';
+    dis1Num='';
+    dis2Num='';
+    result='';
+});
+clearLastE1.addEventListener('click',(e)=>{
+    display2E1.innerText='';
+    dis2Num='';
+})
